@@ -72,7 +72,7 @@ public class Bird {
     public void onClick() {
         if (isAlive) {
             AssetLoader.flap.play();
-            velocity.y = -140;
+            velocity.y = -100; //changed from -140
         }
     }
 

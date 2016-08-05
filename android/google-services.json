@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "558735205204",
+    "firebase_url": "https://speedybird-5464e.firebaseio.com",
+    "project_id": "speedybird-5464e",
+    "storage_bucket": "speedybird-5464e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558735205204:android:1688dc0fdc4b449f",
+        "android_client_info": {
+          "package_name": "com.austinkemper.zombiebird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558735205204-5fpcvc5sb5o6jl62g4l0v4kdoalgsr2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAADbRWvDXR5AIxKsEzsZsmZnYv40RjRco"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

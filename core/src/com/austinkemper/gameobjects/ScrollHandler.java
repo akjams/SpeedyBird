@@ -18,8 +18,8 @@ public class ScrollHandler {
     // the size of the gap between each pair of pipes.
 
     // Capital letters are used by convention when naming constants.
-    public static final int SCROLL_SPEED = -59;
-    public static final int PIPE_GAP = 49;
+    public static final int SCROLL_SPEED = -90; //changed from -59
+    public static final int PIPE_GAP = 49; //changed from 49
 
     // Constructor receives a float that tells us where we need to create our
     // Grass and Pipe objects.
@@ -80,20 +80,20 @@ public class ScrollHandler {
                 + bird.getWidth()) {
             addScore(1);
             pipe1.setScored(true);
-            AssetLoader.coin.play();
+            AssetLoader.coin.play(.5f);
         } else if (!pipe2.isScored()
                 && pipe2.getX() + (pipe2.getWidth() / 2) < bird.getX()
                 + bird.getWidth()) {
             addScore(1);
             pipe2.setScored(true);
-            AssetLoader.coin.play();
+            AssetLoader.coin.play(.5f);
 
         } else if (!pipe3.isScored()
                 && pipe3.getX() + (pipe3.getWidth() / 2) < bird.getX()
                 + bird.getWidth()) {
             addScore(1);
             pipe3.setScored(true);
-            AssetLoader.coin.play();
+            AssetLoader.coin.play(.5f);
 
         }
 

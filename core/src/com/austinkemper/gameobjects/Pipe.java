@@ -76,7 +76,7 @@ public class Pipe extends Scrollable {
         // Call the reset method in the superclass (Scrollable)
         super.reset(newX);
         // Change the height to a random number
-        height = r.nextInt(90) + 15;
+        height = r.nextInt(60) + 35;// changed from r.nextInt(90) + 15  //so avg height 104
         isScored = false;
     }
 

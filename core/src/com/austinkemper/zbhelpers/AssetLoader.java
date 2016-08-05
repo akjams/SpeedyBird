@@ -31,6 +31,8 @@ public class AssetLoader {
 
     public static BitmapFont font, shadow;
 
+    //private static FirebaseAnalytics mFirebaseAnalytics;
+
     public static void load() {
 
         texture = new Texture(Gdx.files.internal("data/texture6.png"));
@@ -65,7 +67,7 @@ public class AssetLoader {
 
         //sounds
         dead = Gdx.audio.newSound(Gdx.files.internal("data/dead.wav"));
-        flap = Gdx.audio.newSound(Gdx.files.internal("data/flap.wav"));
+        flap = Gdx.audio.newSound(Gdx.files.internal("data/bat.wav"));
         coin = Gdx.audio.newSound(Gdx.files.internal("data/coin.wav"));
 
         font = new BitmapFont(Gdx.files.internal("data/text.fnt"));
