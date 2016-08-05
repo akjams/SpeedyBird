@@ -10,3 +10,4 @@ eclipse.project {
     name = appName + "-core"
 }
 
+//apply plugin: 'com.google.gms.google-services'

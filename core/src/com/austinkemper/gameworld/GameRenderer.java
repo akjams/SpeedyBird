@@ -63,6 +63,7 @@ public class GameRenderer {
         // Call helper methods to initialize instance variables
         initGameObjects();
         initAssets();
+        AssetLoader.sax.play();
     }
 
     private void initGameObjects() {

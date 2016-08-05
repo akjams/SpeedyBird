@@ -2,12 +2,14 @@ package com.austinkemper.zbhelpers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+//import com.google.firebase.analytics.FirebaseAnalytics;
 
 /**
  * Created by austinkemper on 8/4/16.
@@ -26,12 +28,13 @@ public class AssetLoader {
     public static Sound dead;
     public static Sound flap;
     public static Sound coin;
+    public static Music sax;
 
     public static Preferences prefs;
 
     public static BitmapFont font, shadow;
 
-    //private static FirebaseAnalytics mFirebaseAnalytics;
+//    private static FirebaseAnalytics mFirebaseAnalytics;
 
     public static void load() {
 
@@ -69,6 +72,9 @@ public class AssetLoader {
         dead = Gdx.audio.newSound(Gdx.files.internal("data/dead.wav"));
         flap = Gdx.audio.newSound(Gdx.files.internal("data/bat.wav"));
         coin = Gdx.audio.newSound(Gdx.files.internal("data/coin.wav"));
+        sax = Gdx.audio.newMusic(Gdx.files.internal("data/sax.m4a"));
+        sax.setVolume(1.0f);
+        sax.setLooping(true);
 
         font = new BitmapFont(Gdx.files.internal("data/text.fnt"));
         font.getData().setScale(.25f, -.25f);
