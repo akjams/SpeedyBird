@@ -6,6 +6,7 @@ import com.austinkemper.zbhelpers.AssetLoader;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Rectangle;
 
+
 /**
  * Created by austinkemper on 8/3/16.
  */
@@ -72,6 +73,7 @@ public class GameWorld {
             bird.die();
             bird.decelerate();
             currentState = GameState.GAMEOVER;
+            //AndroidLauncher.sendScoreAnalytics();
             if (score > AssetLoader.getHighScore()) {
                 AssetLoader.setHighScore(score);
                 currentState = GameState.HIGHSCORE;

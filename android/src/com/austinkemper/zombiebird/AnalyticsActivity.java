@@ -13,7 +13,7 @@ public class AnalyticsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analytics);
 
-        //mFireBaseAnalytics = new FirebaseAnalytics.getInstance(this);
+        mFireBaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 
 

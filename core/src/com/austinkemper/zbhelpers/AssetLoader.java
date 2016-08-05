@@ -16,6 +16,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  */
 public class AssetLoader {
 
+
     public static Texture texture;
     public static TextureRegion bg, grass;
 
@@ -96,6 +97,7 @@ public class AssetLoader {
         coin.dispose();
         font.dispose();
         shadow.dispose();
+        sax.dispose();
     }
 
     public static void setHighScore(int val) {
